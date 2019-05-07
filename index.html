@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>"Pizza."</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+<style>
+.sm-input {
+  background-color: black;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+}
+.lg-input {
+background-color: yellow;
+color: white;
+margin: 5px;
+padding: 5px;
+}
+ </style>
+
+  <body>
+    <header>
+      <h1>"Best Pizza ever."</h1>
+      <h3>"Come and get some, homie."</h3>
+    </header>
+
+
+    <main>
+      <section id ="contact-form">
+        <h2>Place Order</h2>
+        <form method="Get" action="place-order.php">
+          <h4>Delivery Type<h4>
+            <input name="takeaway" type="radio"> Takeaway<br/>
+            <input name="takeaway" type="radio" > Pick Up<br/>
+                      <h4>Address <h4/>
+          <input name="address1" placeholder="Address Line 1 " class="lg-input"/><br/>
+          <input name="address2" placeholder="Address Libe 2"  class="lg-input"/><br/>
+          <input name="City" placeholder="City" class="sm-input"/>
+          <input name=State" placeholder="State" class="sm-input"/>
+          <input name="ZIP" placeholder="ZIPCODE" class="sm-input"/>
+          <br/>
+          <br/>
+          <h4>Size</h4>
+          <select name="size">
+            <option value="12">12"</option>
+            <option value="16">16"</option>
+            <option value="18">18"</option>
+            <option value="20">20"</option>
+
+                </select>
+
+          <h4>Ingredients</h4>
+          <input name="ingredients" type="checkbox" value="pepperoni"/>Pepperoni <br/>
+           <input name="ingredients" type="checkbox" value="salami"/>Salami<br/>
+           <input name="ingredients" type="checkbox" value="capsicum"/>Capsicum <br/>
+          <input name="ingredients" type="checkbox"/ value="pickles">Pickles <br/>
+          <input name="ingredients" type="checkbox" value="sausage"/>Sausage <br/>
+           <input name="ingredients " type="checkbox" value="tomato"/>Tomato<br/>
+         </br>
+         </br>
+
+           <button type="submit" >Place Order</button>
+          </form>
+      <footer>
+
+
+  </body>
+</html>
